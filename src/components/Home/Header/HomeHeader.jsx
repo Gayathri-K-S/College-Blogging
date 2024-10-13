@@ -51,13 +51,14 @@ const HomeHeader = () => {
       <div className="size h-[60px] flex items-center justify-between">
         {/* left side  */}
         <div className="flex items-center gap-3">
-          <Link to={"/"}>
-            <img
-              className="h-[2.5rem]"
-              src="PenIt_logo.jpg"
-              alt="logo"
-            />
-          </Link>
+        <Link to={"/"}>
+          <img
+            className="h-[2.5rem]"
+            src="PenIt_logo.jpg"
+            alt="logo"
+          />
+        </Link>
+
           <Search modal={searchModal} setModal={setSearchModal} />
         </div>
         {/* right side  */}
