@@ -54,7 +54,7 @@ const HomeHeader = () => {
           <Link to={"/"}>
             <img
               className="h-[2.5rem]"
-              src="../../../public/PenIt_logo.jpg"
+              src="PenIt_logo.jpg"
               alt="logo"
             />
           </Link>
