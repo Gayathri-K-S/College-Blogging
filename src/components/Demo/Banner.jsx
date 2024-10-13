@@ -5,7 +5,7 @@ const Banner = () => {
     <div
       className="bg-center bg-cover h-[60vh] flex items-center justify-center"
       style={{
-        backgroundImage: `url('../../../public/psgimg.jpg')`,
+        backgroundImage: `url('psgimg.jpg')`,
         backgroundRepeat: 'no-repeat',
       }}
     >
