@@ -13,7 +13,7 @@ export const nav = [
     },
   ];
   
-  export const discover = [
+ export const discover = [
     "Campus Life",
     "Academics",
     "Exams",
@@ -22,13 +22,20 @@ export const nav = [
     "Research",
     "Study Tips",
     "Scholarships",
-    "Dorm Life",
+    "Nature",
     "Career Planning",
     "Interviews",
     "Experience",
+    "Foods"
     "Sports",
+    "Adventure",
+    "Programming",
+    "Travel",
+    "Explore",
+    "Wanderlust",
     "Machine Learning",
-    "Programming"
+    "Universe",
+
   ];
   
   
