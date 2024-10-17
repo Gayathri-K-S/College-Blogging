@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BsThreeDots } from "react-icons/bs";
-import DropDown from "../../../../utils/DropDown";
 import { useNavigate } from "react-router-dom";
 import { Blog } from "../../../../Context/Context";
 import { deleteDoc, doc } from "firebase/firestore";
@@ -50,10 +49,7 @@ const Actions = ({ postId, title, desc }) => {
       <button onClick={handleClick}>
         <BsThreeDots className="text-2xl" />
       </button>
-      <DropDown showDrop={showDrop} setShowDrop={setShowDrop} size="w-[7rem]">
-        <Button click={handleEdit} title="Edit Story" />
-        <Button click={handleRemove} title="Delete Story" />
-      </DropDown>
+     
     </div>
   );
 };
