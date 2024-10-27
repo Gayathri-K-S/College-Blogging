@@ -29,6 +29,7 @@ export const nav = [
     "Foods"
     "Sports",
     "Adventure",
+     "Dorm Life",
     "Programming",
     "Travel",
     "Explore",
