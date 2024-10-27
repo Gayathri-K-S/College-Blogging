@@ -1,5 +1,5 @@
 import React from "react";
-import Auth from "../Auth/Auth.jsx"
+import Auth from "./Auth/Auth"
 const Banner = () => {
   return (
     <div className="bg-banner border-b border-black">
