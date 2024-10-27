@@ -11,7 +11,7 @@ const Banner = () => {
           Discover stories, thinking, and expertise from writers on any topic.
         </p>
         <button className="btn bg-black1 rounded-full text-white !text-[1.2rem] !px-6 !mt-[2.5rem]">
-          <Auth.jsx/>
+          <Auth/>
         </button>
       </div>
     </div>
