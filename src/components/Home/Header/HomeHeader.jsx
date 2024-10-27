@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { BsMedium } from "react-icons/bs";
 import { CiSearch } from "react-icons/ci";
 import { LiaEditSolid } from "react-icons/lia";
-import { IoMdNotificationsOutline } from "react-icons/io";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Search from "./Search"; // Adjust the import path as needed
@@ -92,10 +91,7 @@ const HomeHeader = () => {
               <span className="text-sm mt-2">Write</span>
             </Link>
           )}
-
-          <span className="text-3xl text-gray-500 cursor-pointer">
-            <IoMdNotificationsOutline />
-          </span>
+          
           <div className="flex items-center relative">
             <img
               onClick={() => setModal(true)}
