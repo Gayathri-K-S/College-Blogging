@@ -26,7 +26,7 @@ export const nav = [
     "Career Planning",
     "Interviews",
     "Experience",
-    "Foods"
+    "Foods",
     "Sports",
     "Adventure",
      "Dorm Life",
