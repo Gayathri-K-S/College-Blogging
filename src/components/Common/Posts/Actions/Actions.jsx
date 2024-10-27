@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { BsThreeDots } from "react-icons/bs";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Blog } from "../../../../Context/Context";
 import { deleteDoc, doc } from "firebase/firestore";
@@ -8,12 +7,7 @@ import { toast } from "react-toastify";
 
 const Actions = ({ postId, title, desc }) => {
   const { setUpdateData, currentUser } = Blog();
-  const [showDrop, setShowDrop] = useState(false);
-  const handleClick = () => {
-    setShowDrop(!showDrop);
-  };
-
-  const navigate = useNavigate(null);
+  const navigate = useNavigate();
 
   const handleEdit = () => {
     navigate(`/editPost/${postId}`);
@@ -32,38 +26,20 @@ const Actions = ({ postId, title, desc }) => {
         "savedPost",
         postId
       );
+
       await deleteDoc(ref);
       await deleteDoc(likeRef);
       await deleteDoc(commentRef);
       await deleteDoc(savedPostRef);
 
-      toast.success("post has been removed");
-      setShowDrop(false);
+      toast.success("Post has been removed");
       navigate("/");
     } catch (error) {
-      toast.success(error.message);
+      toast.error(error.message);
     }
   };
-  return (
-    <div className="relative">
-      <button onClick={handleClick}>
-        <BsThreeDots className="text-2xl" />
-      </button>
-     
-    </div>
-  );
+
+  return <div className="relative">{/* Actions without dropdown */}</div>;
 };
 
 export default Actions;
-
-const Button = ({ click, title }) => {
-  return (
-    <button
-      onClick={click}
-      className={`p-2 hover:bg-gray-100 hover:text-black/80 w-full text-sm text-left
-    ${title === "Delete Story" ? "text-red-600" : ""}
-    `}>
-      {title}
-    </button>
-  );
-};
